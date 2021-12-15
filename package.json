@@ -42,5 +42,8 @@
   "homepage": "https://github.com/crowrvo/FluntTs#readme",
   "bugs": {
     "url": "https://github.com/crowrvo/FluntTs/issues"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
