@@ -69,15 +69,16 @@ class Customer extends Notifiable {
         .Equal(age > 18, true, "Age", "You need more than 18 years")
     );
   }
-  
+
   // You can also add notifications in methods or gets/sets
   public newAge(newAge: number) {
-    this.AddNotification(
-      new Contract()
-        .Equal(age > 18, true, "Age", "You need more than 18 years")
+        this.AddNotification(
+            new Contract()
+            .Equal(age > 18, true, "Age", "You need more than 18 years")
+            .Equal(age < 200, true "Age", "You need to inform a valid age")
+        );
+        this.age = newAge;
     }
-    this.age = newAge;
-  }
 }
 
 // To use class
