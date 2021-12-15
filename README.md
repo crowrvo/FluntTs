@@ -52,7 +52,6 @@ console.log(customer.GetNotifications);
 ### ES5
 
 ```js
-// i will improve imports soon
 const { Notifiable, Contract } = require("@crowrvo/plume");
 
 class Customer extends Notifiable {
