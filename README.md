@@ -55,8 +55,8 @@ console.log(customer.GetNotifications);
 
 ```js
 // i will improve imports soon
-const Notifiable = require(""@crowrvo/plume/dist/Notifications").default;
-const Contract = require(""@crowrvo/plume/dist/Contracts/Contract").default;
+const Notifiable = require("@crowrvo/plume/dist/Notifications").default;
+const Contract = require("@crowrvo/plume/dist/Contracts/Contract").default;
 
 class Customer extends Notifiable {
   constructor(name, lastname, age) {
