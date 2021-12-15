@@ -1,5 +1,5 @@
 {
-  "name": "plume",
+  "name": "@crowrvo/plume",
   "version": "1.0.0",
   "description": "Typescript Library for notifications and validations",
   "scripts": {
