@@ -15,5 +15,5 @@
     "declaration": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts"],
-  "exclude": ["node_modules", "hide.config.js", "src/Tests", "dist"]
+  "exclude": ["node_modules", "hide.config.js", "dist"]
 }

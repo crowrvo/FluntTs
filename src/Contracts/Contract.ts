@@ -7,10 +7,6 @@ export default class Contract {
     return this._notifications;
   }
 
-  public get GetMessages(): Array<string> {
-    return this._notifications.map((x) => x.message);
-  }
-
   Equal(Value: any, Compare: any, Key: string, Message: string): this {
     if (Value != Compare) {
       this._notifications.unshift(new Notification(Key, Message));
