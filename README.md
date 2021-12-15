@@ -20,8 +20,8 @@ $ npm install @crowrvo/plume --save
 
 ```js
 // i will improve imports soon
-import Notifiable from "plume/Notifications";
-import Contract from "plume/Contracts/Contract";
+import Notifiable from "@crowrvo/plume/dist/Notifications";
+import Contract from "@crowrvo/plume/dist/Contracts/Contract";
 
 // extends your class to Notifiable
 class Customer extends Notifiable {
@@ -55,8 +55,8 @@ console.log(customer.GetNotifications);
 
 ```js
 // i will improve imports soon
-const Notifiable = require("plume/Notifications").default;
-const Contract = require("plume/Contracts/Contract").default;
+const Notifiable = require(""@crowrvo/plume/dist/Notifications").default;
+const Contract = require(""@crowrvo/plume/dist/Contracts/Contract").default;
 
 class Customer extends Notifiable {
   constructor(name, lastname, age) {
@@ -71,6 +71,15 @@ class Customer extends Notifiable {
         .Equal(lastname.length > 0, true, "Lastname", "Lastname is required")
         .Equal(age > 18, true, "Age", "You need more than 18 years")
     );
+  }
+  
+  // You can also add notifications in methods or gets/sets
+  public newAge(newAge: number) {
+    this.AddNotification(
+      new Contract()
+        .Equal(age > 18, true, "Age", "You need more than 18 years")
+    }
+    this.age = newAge;
   }
 }
 
