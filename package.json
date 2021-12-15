@@ -5,9 +5,9 @@
   "scripts": {
     "build": "tsc",
     "test": "mocha ./src/Tests/** -r ts-node/register",
-    "test:dist": "mocha ./dist/Tests/**",
-    "test:coverage": "nyc --reporter=text mocha ./src/Tests/** -r ts-node/register",
-    "test:coverage-dist": "nyc --reporter=text mocha ./dist/Tests/**"
+    "test:dist": "mocha ./dist/Tests/**.test.js",
+    "test:coverage": "nyc --reporter=text mocha ./src/Tests/**.test.ts -r ts-node/register",
+    "test:coverage-dist": "nyc --reporter=text mocha ./dist/Tests/**.test.js"
   },
   "author": "Crowrvo <crowrvoblackfeather@gmail.com>",
   "license": "MIT",
@@ -44,6 +44,7 @@
     "url": "https://github.com/crowrvo/FluntTs/issues"
   },
   "files": [
-    "dist"
-  ]
+    "dist/"
+  ],
+  "main": "dist/index.js"
 }

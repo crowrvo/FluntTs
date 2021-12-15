@@ -1,6 +1,6 @@
 # FluntTS (Plume)
 
-[![Build Status](https://travis-ci.com/crowrvo/flunt.svg?branch=master)](https://travis-ci.com/crowrvo/FluntTs) [![Coverage Status](https://coveralls.io/repos/github/crowrvo/FluntTs/badge.svg?branch=master)](https://coveralls.io/github/crowrvo/FluntTs?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What is Flunt?
 
@@ -19,9 +19,7 @@ $ npm install @crowrvo/plume --save
 ### ES6
 
 ```js
-// i will improve imports soon
-import Notifiable from "plume/Notifications";
-import Contract from "plume/Contracts/Contract";
+import { Notifiable, Contract } from "@crowrvo/plume";
 
 // extends your class to Notifiable
 class Customer extends Notifiable {
@@ -55,8 +53,7 @@ console.log(customer.GetNotifications);
 
 ```js
 // i will improve imports soon
-const Notifiable = require("plume/Notifications").default;
-const Contract = require("plume/Contracts/Contract").default;
+const { Notifiable, Contract } = require("@crowrvo/plume");
 
 class Customer extends Notifiable {
   constructor(name, lastname, age) {
@@ -142,8 +139,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 | ![Crowrvo](https://avatars.githubusercontent.com/u/56355669?s=40&u=ac0b978ab5cd80f932a5732cfeebb1705a841a8d&v=4) |
-| :-------------------------------------------------------------------------------------------------------------------------: |
-|                                    [Crowrvo](https://github.com/crowrvo/)                                     |
+| :--------------------------------------------------------------------------------------------------------------: |
+|                                      [Crowrvo](https://github.com/crowrvo/)                                      |
 
 See also the list of [contributors](https://github.com/crowrvo/FluntTs/contributors) who participated in this project.
 

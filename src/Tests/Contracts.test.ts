@@ -2,7 +2,7 @@ import {
   InvalidTestingsAllMethods,
   ValidTesting4Tests0Notifications,
   InvalidTestings4Methods2Notifications,
-} from "../../Mock/Contracts/base";
+} from "../Mock/Contracts/base";
 import "mocha";
 import * as assert from "assert";
 
