@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "useDefineForClassFields": true,
+    "strict": false,
+    "types": ["node"],
+    "lib": ["ESNext", "DOM"],
+    "declaration": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "exclude": ["node_modules", "hide.config.js", "src/Tests", "dist"]
+}
